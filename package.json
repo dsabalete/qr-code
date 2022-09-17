@@ -7,12 +7,16 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev ./dist",
+    "deploy": "npx wrangler pages publish dist",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^1.0.2",
     "@astrojs/tailwind": "^2.0.1",
     "astro": "1.2.6",
+    "qr-image": "^3.2.0",
+    "qrcode": "^1.5.1",
     "tailwindcss": "^3.1.8"
   }
 }
