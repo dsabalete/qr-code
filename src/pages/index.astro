@@ -30,7 +30,7 @@ form.addEventListener('submit', (evt) => {
 
 	const url = new URL(evt.target[0].value)
 
-	fetch('http://127.0.0.1:8788/api/generate-qr', {
+	fetch('https://qr-code-e3h.pages.dev/api/generate-qr', {
 		method: 'POST',
 		body: JSON.stringify({ url: url.toString() }),
 		headers: {

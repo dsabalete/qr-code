@@ -98,7 +98,7 @@ form.addEventListener('submit', (evt) => {
 
 	const url = new URL(evt.target[0].value)
 
-	fetch('http://127.0.0.1:8788/api/generate-qr', {
+	fetch('https://qr-code-e3h.pages.dev/api/generate-qr', {
 		method: 'POST',
 		body: JSON.stringify({ url: url.toString() }),
 		headers: {
@@ -128,8 +128,8 @@ form.addEventListener('submit', (evt) => {
 		</div>
 	</main>`})}
 
-`}),Wi="/Users/davidsabalete/repos/dsabalete/qr-code/src/pages/index.astro",Ji="",Vi=Object.freeze(Object.defineProperty({__proto__:null,$$metadata:Bi,default:Tt,file:Wi,url:Ji},Symbol.toStringTag,{value:"Module"})),Gi=new Map([["src/pages/index.astro",Vi]]),Yi=[Object.assign({name:"astro:jsx",serverEntrypoint:"astro/jsx/server.js",jsxImportSource:"astro"},{ssr:Li})],Ot=Object.assign($i({adapterName:"@astrojs/cloudflare",routes:[{file:"",links:["assets/index.88d467a9.css"],scripts:[{type:"inline",value:`const r=document.querySelector("#qr-code-form"),s=document.querySelector("#result");r.addEventListener("submit",t=>{t.preventDefault();const n=new URL(t.target[0].value);fetch("http://127.0.0.1:8788/api/generate-qr",{method:"POST",body:JSON.stringify({url:n.toString()}),headers:{"Content-Type":"application/json"}}).then(e=>e.json()).then(e=>{console.log(e);const{svg:o}=e;s.innerHTML=o})});
-`}],routeData:{route:"/",type:"page",pattern:"^\\/$",segments:[],params:[],component:"src/pages/index.astro",pathname:"/",_meta:{trailingSlash:"ignore"}}}],base:"/",markdown:{drafts:!1,syntaxHighlight:"shiki",shikiConfig:{langs:[],theme:"github-dark",wrap:!1},remarkPlugins:[],rehypePlugins:[],remarkRehype:{},extendDefaultPlugins:!1,isAstroFlavoredMd:!1},pageMap:null,renderers:[],entryModules:{"\0@astrojs-ssr-virtual-entry":"_worker.js","/astro/hoisted.js?q=0":"hoisted.154afb74.js","astro:scripts/before-hydration.js":""},assets:["/assets/index.88d467a9.css","/favicon.png","/favicon.svg","/image-qr-code.png"]}),{pageMap:Gi,renderers:Yi}),Xi=void 0,Ki=Pt(Ot),Qi=Ki.onRequest,ot="start";ot in tt&&tt[ot](Ot,Xi);export{Qi as onRequest};
+`}),Wi="/Users/davidsabalete/repos/dsabalete/qr-code/src/pages/index.astro",Ji="",Vi=Object.freeze(Object.defineProperty({__proto__:null,$$metadata:Bi,default:Tt,file:Wi,url:Ji},Symbol.toStringTag,{value:"Module"})),Gi=new Map([["src/pages/index.astro",Vi]]),Yi=[Object.assign({name:"astro:jsx",serverEntrypoint:"astro/jsx/server.js",jsxImportSource:"astro"},{ssr:Li})],Ot=Object.assign($i({adapterName:"@astrojs/cloudflare",routes:[{file:"",links:["assets/index.88d467a9.css"],scripts:[{type:"inline",value:`const r=document.querySelector("#qr-code-form"),s=document.querySelector("#result");r.addEventListener("submit",t=>{t.preventDefault();const n=new URL(t.target[0].value);fetch("https://qr-code-e3h.pages.dev/api/generate-qr",{method:"POST",body:JSON.stringify({url:n.toString()}),headers:{"Content-Type":"application/json"}}).then(e=>e.json()).then(e=>{console.log(e);const{svg:o}=e;s.innerHTML=o})});
+`}],routeData:{route:"/",type:"page",pattern:"^\\/$",segments:[],params:[],component:"src/pages/index.astro",pathname:"/",_meta:{trailingSlash:"ignore"}}}],base:"/",markdown:{drafts:!1,syntaxHighlight:"shiki",shikiConfig:{langs:[],theme:"github-dark",wrap:!1},remarkPlugins:[],rehypePlugins:[],remarkRehype:{},extendDefaultPlugins:!1,isAstroFlavoredMd:!1},pageMap:null,renderers:[],entryModules:{"\0@astrojs-ssr-virtual-entry":"_worker.js","/astro/hoisted.js?q=0":"hoisted.027e5647.js","astro:scripts/before-hydration.js":""},assets:["/assets/index.88d467a9.css","/favicon.png","/favicon.svg","/image-qr-code.png"]}),{pageMap:Gi,renderers:Yi}),Xi=void 0,Ki=Pt(Ot),Qi=Ki.onRequest,ot="start";ot in tt&&tt[ot](Ot,Xi);export{Qi as onRequest};
 /**
  * shortdash - https://github.com/bibig/node-shorthash
  *
